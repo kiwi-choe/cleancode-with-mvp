@@ -1,0 +1,32 @@
+
+Following "Android Testing Codelab"
+
+1. MVP Architecture
+ The key idea to a testable architecture is to separate parts of the application,
+ making them easier to maintain and test individually.
+
+ we follow the MVP, separating the internal data model, from a passive view through
+ a presenter that handles the logic.
+
+ Model      : provides and store the internal data.
+              Note, NotesRepository, NotesServiceApi
+
+ View       : handles the display of data. User actions are forwarded to the presenter.
+              NotesContract.View, NotesFragment
+              NoteDetailContract.View, NoteDetailFragment
+              AddNoteContract.View, AddNoteFragment
+
+ Presenter  : coordinates the UI with the data, ensuring they are in sync. Specifically,
+                it updates the view and acts upon user events that are forwarded by the view.
+              NotesPresenter
+              NoteDetailPresenter
+              AddNotePresenter
+
+
+ Contract interface : this defines the interface for the View and Presenter callbacks of each feature.
+                      This makes it clear which classes belong to the same feature and
+                      how they are interconnected.
+
+
+
+
