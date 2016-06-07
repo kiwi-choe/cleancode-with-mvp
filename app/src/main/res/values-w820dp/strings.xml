@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="navigation_view_header_title">Notes</string>
+    <string name="note_title">Title</string>
+    <string name="note_description">Enter your note here.</string>
+    <string name="empty_note_msg">Empty  note!</string>
+    <string name="loading">LOADING</string>
 </resources>

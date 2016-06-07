@@ -28,7 +28,7 @@ android {
     // If you need to add more flavors, consider using flavor dimensions.
     productFlavors {
         mock {
-            applicationIdSuffix=".mock"
+            applicationIdSuffix = ".mock"
         }
         prod {
 
@@ -37,8 +37,8 @@ android {
 
     // Remove mockRelease as it's not needed.
     android.variantFilter { variant ->
-        if(variant.buildType.name.equals('release')
-        && variant.getFlavors().get(0).name.equals('mock')) {
+        if (variant.buildType.name.equals('release')
+                && variant.getFlavors().get(0).name.equals('mock')) {
             variant.setIgnore(true);
         }
     }
@@ -79,8 +79,8 @@ dependencies {
     androidTestCompile "com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
     androidTestCompile "com.android.support.test.espresso:espresso-contrib:$rootProject.ext.espressoVersion"
     androidTestCompile "com.android.support.test.espresso:espresso-intents:$rootProject.ext.espressoVersion"
+    compile 'com.android.support:support-v4:23.4.0'
 }
-
 
 /*
 Resolves dependency versions across test and production APKs, specifically, transitive

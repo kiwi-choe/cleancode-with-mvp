@@ -5,4 +5,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="statistics_title">statistics</string>
     <string name="navigation_view_header_title">Notes</string>
+    <string name="newnote">New Note</string>
+    <string name="statistics">Statistics Activity</string>
+    <string name="notesaved">Note saved</string>
+    <string name="note_title">Title</string>
+    <string name="note_description">Enter your note here.</string>
+    <string name="empty_note_msg">Empty  note!</string>
+    <string name="loading">LOADING</string>
 </resources>
